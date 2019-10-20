@@ -1,0 +1,78 @@
+.home{
+
+    .contain{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        border: 2px solid;
+    }
+    
+    .hero{
+        height: 50vh;
+        background-color: lightblue;
+    
+        .contain{
+        }
+    }
+    
+    .about{
+        height: 50vh;
+        background-color: lightcoral;
+    
+        .contain{
+            
+        }
+    }
+    
+    .mission{
+        height: 50vh;
+        background-color: lightgreen;
+    
+        .contain{
+            
+        }
+    }
+    
+    .benefits{
+        height: 50vh;
+        background-color: lightsalmon;
+    
+        .contain{
+            
+        }
+    }
+    
+    
+    .testimonial{
+        height: 50vh;
+        background-color: lightskyblue;
+    
+        .contain{
+            
+        }
+    }
+    
+    .call-to-action{
+        height: 50vh;
+        background-color: lightgoldenrodyellow;
+    
+        .contain{
+            
+        }
+    }
+    
+    .blog{
+        height: 50vh;
+        background-color: lightgreen;
+    
+        .contain{
+            
+        }
+    }
+
+}
+
