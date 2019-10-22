@@ -46,7 +46,7 @@ const IndexPage = () => (
         <section className = "blog">
           <div className = "contain">
               <h1>Read Our Blog</h1>
-              <Link to="/page-2/">Go to page 2</Link>
+              <Link to="/blog">Go to page 2</Link>
           </div>
         </section>
     </main>
