@@ -1,15 +1,12 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
-import "../scss/pages/about.scss"
 
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <main class = "about">
+    <section id = "aboutPage">
         <section className = "hero">
           <div className = "contain">
             <h1>About</h1>
@@ -22,11 +19,7 @@ const About = () => (
               <h1>About Our Team</h1>
           </div>
         </section>
-    </main>
-    <div>
-      {/* <Image /> */}
-    </div>
-    
+    </section>
   </Layout>
 )
 

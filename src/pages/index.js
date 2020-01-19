@@ -4,12 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import "../scss/pages/index.scss"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <main class = "home">
+    <section id = "homePage">
         <section className = "hero">
           <div className = "contain">
             <h1>Web Development and Photography Agency</h1>
@@ -49,7 +48,7 @@ const IndexPage = () => (
               <Link to="/blog">Go to page 2</Link>
           </div>
         </section>
-    </main>
+    </section>
     <div>
       {/* <Image /> */}
     </div>

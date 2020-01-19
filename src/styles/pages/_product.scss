@@ -1,4 +1,4 @@
-.product{
+#productPage{
 
     .contain{
         display: flex;
@@ -13,11 +13,9 @@
 
     .hero{
         height: 50vh;
-        background-color: lightblue;
     }
 
     .product{
         height: 50vh;
-        background-color: lightcoral;
     }
 }

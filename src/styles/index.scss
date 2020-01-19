@@ -1,0 +1,24 @@
+@import
+    "base/variables";
+    
+@import 
+    "base/typography",
+    "base/reset",
+    "base/breakpoints",
+    "base/global";
+
+@import 
+    "themes/lightMode";
+
+
+@import 
+    "layout/layout",
+    "layout/header",
+    "layout/footer";
+
+@import 
+    "pages/about.scss", 
+    "pages/blog.scss", 
+    "pages/customers.scss", 
+    "pages/home.scss", 
+    "pages/product.scss";

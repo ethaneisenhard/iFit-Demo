@@ -1,0 +1,134 @@
+:root {
+    --color-day-icon: #ffe4a1;
+    --color-night-icon: #b9c6d3;
+    --color-shadow-light: rgba(27, 7, 7, 0.15);
+    --color-shadow-mid: rgba(0, 0, 0, 0.25);
+    --color-shadow-dark: rgba(0, 0, 0, 0.9); 
+}
+
+#darkModeToggle{
+    text-transform: uppercase;
+    
+    .u-a11y {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    .toggle__wrap {
+        align-items: center;
+        display: flex;
+    
+        > * + * {
+            margin-left: 10px;
+        }
+    }
+    
+    .toggle__label {
+        transition: color .3s;
+    }
+    
+    .toggle__switch {
+        background-color: var(--main-color);
+        border: 0;
+        border-radius: 14px;
+        box-sizing: border-box;
+        height: 28px;
+        padding: 0;
+        position: relative;
+        transition: background-color .3s;
+        width: 56px;
+        
+        &:before {
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            box-shadow: 0px 0px 4px var(--color-shadow-mid);
+            box-sizing: border-box;
+            content: '';
+            height: 22px;
+            left: 4px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: .35s cubic-bezier(.37, .01, .43, 1.3);
+            width: 22px;
+            z-index: 2;
+        }
+        
+        &:focus,
+        &:hover {
+            outline: none;
+            
+            &:before {
+                // TODO: A nicer way of handling this
+                border: 5px double var(--color-dark);
+            }
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
+        
+        // Dark mode on
+        &[aria-pressed=true] {
+            background-color: var(--secondary-color);
+            
+            &:before {
+                left: 31px;
+                background-color: var(--main-color);
+            }
+            
+            // TODO: I think background-image might be a nicer way of doing this
+            .toggle__icon--light {
+                left: 27px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            .toggle__icon--dark {
+                left: 6px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    
+    .toggle__icon {
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: visibilty .3s, opacity .3s, left .3s;
+        width: 16px;
+    }
+    
+    // Damn arbritary values :(
+    
+    .toggle__icon--light {
+        left: 33px;
+    }
+    
+    .toggle__icon--dark {
+        left: 12px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    @media screen and (prefers-reduced-motion: reduce) {
+        .toggle,
+        .toggle__label,
+        .toggle__icon,
+        .toggle__switch,
+        .toggle__switch:before {
+            animation: none;
+            transition: none;
+        }
+    }
+    
+}
+

@@ -1,11 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import "../scss/layout/footer.scss"
 
 const Footer = ({ siteTitle }) => (
   <footer>
-    <div className = "main-footer-contain">
+    <div className = "f-wrapper">
       <h1>
         <Link to="/">
           {siteTitle}

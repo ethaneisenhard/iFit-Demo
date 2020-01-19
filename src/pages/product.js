@@ -4,12 +4,11 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import "../scss/pages/product.scss"
 
 const Product = () => (
   <Layout>
     <SEO title="Product" />
-    <main class = "product">
+    <section id = "productPage">
         <section className = "hero">
           <div className = "contain">
             <h1>Product</h1>
@@ -22,11 +21,7 @@ const Product = () => (
               <h1>More about our product.</h1>
           </div>
         </section>
-    </main>
-    <div>
-      {/* <Image /> */}
-    </div>
-    
+    </section>   
   </Layout>
 )
 

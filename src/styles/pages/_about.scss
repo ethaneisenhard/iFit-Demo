@@ -1,5 +1,4 @@
-.customers{
-
+#aboutPage{
     .contain{
         display: flex;
         flex-flow: column;
@@ -13,11 +12,9 @@
 
     .hero{
         height: 50vh;
-        background-color: lightblue;
     }
 
-    .case-studies{
+    .team{
         height: 50vh;
-        background-color: lightcoral;
     }
 }
