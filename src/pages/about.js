@@ -9,14 +9,14 @@ const About = () => (
     <section id = "aboutPage">
         <section className = "hero">
           <div className = "contain">
-            <h1>About</h1>
+            <h2>About</h2>
             <p>Here is what we are about.</p>
             <p>Lets build something great.</p>
           </div>
         </section>
         <section className = "team">
           <div className = "contain">
-              <h1>About Our Team</h1>
+              <h2>About Our Team</h2>
           </div>
         </section>
     </section>

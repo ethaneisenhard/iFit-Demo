@@ -9,13 +9,13 @@ const Blog = () => (
     <section id = "blogPage">
         <section className = "hero">
           <div className = "contain">
-            <h1>Blog</h1>
+            <h2>Blog</h2>
             <p>Read about our Blog.</p>
           </div>
         </section>
         <section className = "blog-posts">
           <div className = "contain">
-              <h1>Blog Posts</h1>
+              <h2>Blog Posts</h2>
           </div>
         </section>
     </section>

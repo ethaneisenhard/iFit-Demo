@@ -25,7 +25,7 @@ class DarkModeToggle extends PureComponent {
 
     // Handle the actual toggle and switch the theme
     objToggle.addEventListener("click", e => {
-      if (objToggle.getAttribute("aria-pressed") == "false") {
+      if (objToggle.getAttribute("aria-pressed") === "false") {
         objToggle.setAttribute("aria-pressed", "true")
         objToggleContainer.setAttribute("data-theme", "dark")
         localStorage.setItem("darkMode", "true")

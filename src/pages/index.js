@@ -11,40 +11,40 @@ const IndexPage = () => (
     <section id = "homePage">
         <section className = "hero">
           <div className = "contain">
-            <h1>Web Development and Photography Agency</h1>
+            <h2>Web Development and Photography Agency</h2>
             <p>Welcome to your new future.</p>
             <p>Lets build something great.</p>
           </div>
         </section>
         <section className = "about">
           <div className = "contain">
-              <h1>About</h1>
+              <h2>About</h2>
           </div>
         </section>
         <section className = "mission">
           <div className = "contain">
-            <h1>Mission</h1>
+            <h2>Mission</h2>
           </div>
         </section>
         <section className = "benefits">
           <div className = "contain">
-            <h1>Benefits</h1>
+            <h2>Benefits</h2>
           </div>
         </section>
         <section className = "testimonial">
           <div className = "contain">
-            <h1>Testimonials</h1>
+            <h2>Testimonials</h2>
           </div>
         </section>
         <section className = "call-to-action">
           <div className = "contain">
-            <h1>Call To Action</h1>
+            <h2>Call To Action</h2>
             <button>Start For Free</button>
           </div>
         </section>
         <section className = "blog">
           <div className = "contain">
-              <h1>Read Our Blog</h1>
+              <h2>Read Our Blog</h2>
               <Link to="/blog">Go to page 2</Link>
           </div>
         </section>

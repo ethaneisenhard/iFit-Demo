@@ -9,14 +9,14 @@ const Customers = () => (
     <section id = "customersPage">
         <section className = "hero">
           <div className = "contain">
-            <h1>Customers</h1>
+            <h2>Customers</h2>
             <p>Here is what our customers have to say.</p>
             <p>Read more.</p>
           </div>
         </section>
         <section className = "case-studies">
           <div className = "contain">
-              <h1>Case Studies</h1>
+              <h2>Case Studies</h2>
           </div>
         </section>
     </section>  
