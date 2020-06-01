@@ -37,6 +37,7 @@ header{
                 line-height: 14px;
                 padding: 1em 2em;
                 border-right: 1px solid lightgrey;
+                font-weight: 600;
 
                 &:first-child{
                     padding-left: 0px;
@@ -98,6 +99,7 @@ header{
                         letter-spacing: 1px;
                         text-align: center;
                         line-height: 14px;
+                        font-weight: 600;
                     }
                 }
             }

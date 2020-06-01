@@ -78,10 +78,10 @@ const ReviewCarousel = () => {
             </ul>
           </div>
           <div className="glide__arrows" data-glide-el="controls">
-            <button className="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <button className="glide__arrow glide__arrow--left" data-glide-dir="<" title="left arrow for reviews">
               <img src={leftArrow} alt=""/>
             </button>
-            <button className="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <button className="glide__arrow glide__arrow--right" data-glide-dir=">" title="right arrow for reviews">
               <img src={rightArrow} alt=""/>
             </button>
           </div>
