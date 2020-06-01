@@ -33,7 +33,7 @@ const EquipmentCards = () => {
             <Animate {...animateProps} sequenceIndex={0}>
               <article>
                 <div className="image">
-                  <img src={equipment1} alt="" />
+                  <img src={equipment1} alt="Treadmills" />
                 </div>
                 <div className="article-text">
                   <h4>Treadmills</h4>
@@ -43,7 +43,7 @@ const EquipmentCards = () => {
             <Animate {...animateProps} sequenceIndex={1}>
               <article>
                 <div className="image">
-                  <img src={equipment2} alt="" />
+                  <img src={equipment2} alt="Bikes" />
                 </div>
                 <div className="article-text">
                   <h4>Bikes</h4>
@@ -53,7 +53,7 @@ const EquipmentCards = () => {
             <Animate {...animateProps} sequenceIndex={2}>
               <article>
                 <div className="image">
-                  <img src={equipment3} alt="" />
+                  <img src={equipment3} alt="Ellipticals" />
                 </div>
                 <div className="article-text">
                   <h4>Ellipticals</h4>
@@ -63,7 +63,7 @@ const EquipmentCards = () => {
             <Animate {...animateProps} sequenceIndex={3}>
               <article>
                 <div className="image">
-                  <img src={equipment4} alt="" />
+                  <img src={equipment4} alt="Strength" />
                 </div>
                 <div className="article-text">
                   <h4>Strength</h4>

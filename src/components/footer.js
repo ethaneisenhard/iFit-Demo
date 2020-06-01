@@ -35,27 +35,27 @@ const Footer = ({ siteTitle }) => (
         <nav>
             <div className="social-border-wrap">
               <Link to ="/">
-                <img src={youtube} alt=""/>
+                <img src={youtube} alt="Connect on YoutTube"/>
               </Link>
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-                <img src={pinterest} alt=""/>
+                <img src={pinterest} alt="Connect on Pinterest"/>
               </Link>
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-               <img src={facebook} alt=""/>
+               <img src={facebook} alt="Connect on Facebook"/>
               </Link>
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-                <img src={twitter} alt=""/>
+                <img src={twitter} alt="Connect on Twitter"/>
               </Link>
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-                <img src={instagram} alt=""/>
+                <img className = "instagram" src={instagram} alt="Connect on Instagram"/>
               </Link>
             </div>
         </nav>

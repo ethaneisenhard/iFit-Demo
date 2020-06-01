@@ -23,7 +23,7 @@ module.exports = {
         short_name: `iFit Demo`,
         start_url: `/`,
         display: `demo`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
