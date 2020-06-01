@@ -1,27 +1,132 @@
 header{
-    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #eaebed;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: transform 500ms ease, opacity 600ms ease;
+    z-index: 5;
 
-    .header-contain{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1400px;
-        margin: 0 auto;
+    &.animate-hide-header{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
 
-        nav.main-nav{
-            ul{
-                display: none;
-                justify-content: space-between;
+    .header-top{
+       display: block;
+       margin: 0 auto;
+       border-bottom: 1px solid lightgrey;
+       padding: 0 1em;
 
-                @media only screen and (min-width: 900px){
-                    display: flex;
-                }
+       .header-top-nav{
+            display: flex;
+            position: relative;
+            max-width: 1600px;
+            margin: 0 auto;
 
-                li{
-                    padding: .5em;
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: rgba(46,49,52,0.80);
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                text-align: center;
+                line-height: 14px;
+                padding: 1em 2em;
+                border-right: 1px solid lightgrey;
+
+                &:first-child{
+                    padding-left: 0px;
                 }
             }
 
+            .header-top-divider{
+                position: absolute;
+                height: 1px;
+                width:100%;
+            }
+       }
+    }
+
+    .header-bottom{
+        position: relative;
+        display: block;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: #4f3b78;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 1em;
+
+        @include breakpoint(md){
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        nav.main-nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                width: auto;
+
+                @include breakpoint(sm){
+                    width: 400px;
+                }
+
+                @include breakpoint(md){
+                    width: auto;
+                }
+
+                li{
+                    padding-top: 1em;
+                    padding-right: .5em;
+
+                    @include breakpoint(md){
+                        padding: .5em;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: rgba(46,49,52,0.80);
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        line-height: 14px;
+                    }
+                }
+            }
+
+        }
+
+        .sign-up-btn-container{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: auto;
+           
+            @include breakpoint(md){
+                position: relative;
+                width: auto;
+                float: none;
+                top: 0px;
+                right: 0px;
+            }
+
+            @include breakpoint(md){
+                width: 176px;
+               
+            }
+
+            button{
+                display: block;
+                margin-left: auto;
+            }
         }
     }
     

@@ -1,13 +1,13 @@
-$base_font_family: "Futura",sans-serif;
-$header_font_family: "mrs-eaves", "Times New Roman", Georgia, Serif;
-$copper_font_family: "copperplate",sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
+
+$base_font_family: "Open Sans", sans-serif;
 
 $base_font_weight_thin: 200;
 $base_font_weight_normal: 300;
 $base_font_weight_thick: 400;
 $base_font_weight_bold: 700;
 
-$base_font_size: 15px;
+$base_font_size: 16px;
 $base_line_height: 1.5;
 $base_font_color: #25211e;
 

@@ -1,0 +1,129 @@
+#review-slider {
+    height: 100%;
+
+    .container {
+        position: relative;
+        padding: 40px;
+    }
+
+    .slides {
+        position: relative;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+
+    .slide {
+        display: grid;
+        grid-gap: 1em;
+        font-size: 40px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        opacity: 0;
+        z-index: 1;
+        transform: scale(0.7);
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s, transform 1s;
+
+        @media only screen and (min-width: 900px){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .showing {
+        position: relative;
+        transform: scale(1);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    /*
+      non-essential styles:
+      just for appearance; change whatever you want
+      */
+        
+        
+    .review{
+        display: flex;
+        flex-flow: column;
+        background: #FFFFFF;
+        box-shadow: 0 1px 2px 0 rgba(46, 49, 52, 0.4);
+        border-radius: 4px;
+
+        img{
+            margin: auto;
+            padding: 40px;
+            padding-bottom: 20px;
+            width: 140px;
+        }
+
+        p{
+            opacity: 0.8;
+            font-size: 16px;
+            color: #2E3134;
+            letter-spacing: 0.3px;
+            text-align: center;
+            line-height: 24px;
+            margin: auto;
+            padding: 20px 40px;
+            flex: 1;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        height: 100%;
+        top: 0px;
+        z-index: 10;
+        font-size: 0px;
+
+        img{
+            height: 12px;
+            width: 12px;
+        }
+
+        #previous{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #next{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .controls {
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        background: #000C28;
+        border: 1px solid rgba(244,245,247,0.32);
+        box-shadow: 0 7px 12px 0 rgba(46,49,52,0.30);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+    }
+}

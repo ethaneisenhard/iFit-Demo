@@ -1,48 +1,61 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import DarkModeToggle from "../components/darkModeToggle"
-import { slide as Menu } from "react-burger-menu"
+import IFitLogo from "../images/icons/iFitLogo.js"
+// import { slide as Menu } from "react-burger-menu"
 
-const MobileMenu = () => {
+// const MobileMenu = () => {
+//   return (
+//     <Menu right>
+//       <Link to="/about/">About</Link>
+//       <Link to="/services/">Services</Link>
+//       <Link to="/career/">Career</Link>
+//       <Link to="/blog/">Blog</Link>
+//       <Link to="/contact/">Get Started</Link>
+//     </Menu>
+//   )
+// }
+
+const Header = ({ siteTitle }) => {
   return (
-    <Menu right>
-      <Link to="/about/">About</Link>
-      <Link to="/services/">Services</Link>
-      <Link to="/career/">Career</Link>
-      <Link to="/blog/">Blog</Link>
-      <Link to="/contact/">Get Started</Link> 
-    </Menu>
+    <header>
+      <div className="header-contain">
+        <div className="header-top">
+          <nav className="header-top-nav">
+            <Link to="/">Blog</Link>
+            <Link to="/">Nourish</Link>
+            <Link to="/">Shop</Link>
+          </nav>
+        </div>
+        <div className="header-bottom">
+          <Link to="/" title={siteTitle}>
+            <IFitLogo />
+          </Link>
+          <nav className="main-nav">
+            <ul>
+              <li>
+                <Link to="/">Exercise</Link>
+              </li>
+              <li>
+                <Link to="/">Nutrition</Link>
+              </li>
+              <li>
+                <Link to="/">Activity</Link>
+              </li>
+              <li>
+                <Link to="/">Sleep</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="sign-up-btn-container">
+            <button className="btn">Sign Up</button>
+          </div>
+        </div>
+        {/* <DarkModeToggle/> */}
+      </div>
+    </header>
   )
 }
-
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="header-contain">
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
-      <nav className="main-nav">
-        <MobileMenu />
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/product">Product</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/customers">Customers</Link>
-          </li>
-        </ul>
-      </nav>
-      <DarkModeToggle/>
-    </div>
-  </header>
-)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

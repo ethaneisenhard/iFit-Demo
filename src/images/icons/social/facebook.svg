@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Social / Social Media / facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17,3 L17,6.6 L15.2,6.6 C14.6,6.6 14.3,7.3 14.3,7.9 L14.3,10.1 L17,10.1 L17,13.7 L14.3,13.7 L14.3,21 L10.7,21 L10.7,13.8 L8,13.8 L8,10.2 L10.7,10.2 L10.7,6.6 C10.7,4.6 12.3,3 14.3,3 L17,3" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-716.000000, -2505.000000)">
+            <g id="Footer" transform="translate(0.000000, 2268.000000)">
+                <g id="social" transform="translate(0.000000, 208.000000)">
+                    <g id="icons" transform="translate(556.000000, 18.000000)">
+                        <g id="facebook" transform="translate(144.000000, 0.000000)">
+                            <g id="Social-/-Social-Media-/-facebook" transform="translate(8.000000, 8.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="mask" fill="#2E3134" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="Fill-/-White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <polygon id="ui/color/white" points="0 0 24 0 24 24 0 24"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

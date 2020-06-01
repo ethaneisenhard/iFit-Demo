@@ -1,0 +1,128 @@
+#review-carousel {
+    height: 100%;
+
+    // .container{
+    //     display: 
+    // }
+
+    .slides {
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+
+    .slide {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1);
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s, transform 1s;
+    }
+
+    .showing {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    /*
+      non-essential styles:
+      just for appearance; change whatever you want
+      */
+
+    .slide {
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-gap: 1em;
+        font-size: 40px;
+        padding: 40px;
+        box-sizing: border-box;
+        background: #333;
+        color: #fff;
+        background-size: cover;
+        
+        .review{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+     
+            background: #FFFFFF;
+            box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);
+            border-radius: 4px;
+
+            img{
+                margin:auto;
+                height: 140px;
+                width: 140px;
+            }
+
+            p{
+                opacity: 0.8;
+                font-size: 16px;
+                color: #2E3134;
+                letter-spacing: 0.3px;
+                text-align: center;
+                line-height: 24px;
+                margin:auto;
+            }
+        }
+
+        &:nth-of-type(1) {
+            background-color: #F6F6F8;
+        }
+
+        &:nth-of-type(2) {
+            background-color: #F6F6F8;
+        }
+
+        &:nth-of-type(3) {
+            background-color: #F6F6F8;
+        }
+    }
+
+    .controls {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 20px 0px;
+        font-size: 20px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        margin: 10px 0px 0px 10px;
+        width: 70px;
+
+        &:hover,
+        &:focus {
+            background: #eee;
+            color: #333;
+        }
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+    }
+
+    .buttons {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 10;
+        font-size: 0px;
+    }
+}

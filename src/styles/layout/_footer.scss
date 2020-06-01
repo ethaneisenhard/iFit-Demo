@@ -1,8 +1,119 @@
 footer{
-    padding: 1em;
+    background-color: #2E3134;
+    color: white;
 
-    .f-wrapper{
-        max-width: 1400px;
-        margin: 0 auto;
+    .f-main-nav{
+        padding: 3em 0em;
+
+        nav{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+
+            @include breakpoint(sm){
+                flex-flow: row;
+                text-align: left;
+            }
+        }
+
+        .f-main-nav-column{
+            display: flex;
+            flex-flow:column;
+
+            h5{
+                margin: 10px 0px;
+                font-size: 16px;
+            }
+
+            a{
+                margin: 10px 0px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .f-social-nav{
+        padding: 1em 0em;
+        
+        border-top: 1px solid #585A5D;
+        border-bottom: 1px solid #585A5D;
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .social-border-wrap{
+            position: relative;
+            background: linear-gradient(130deg, #0069D2, #28E1A5);
+            padding: 2px;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+
+        a{
+            display: flex;
+            flex-flow:column;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background-color: #2E3134;
+            border-radius: 50%;
+        }
+        
+    }
+
+    .f-terms{
+        display: flex;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+
+        @include breakpoint(md){
+            display: flex;
+            flex-flow:row;
+            justify-content: space-between;
+        }
+
+        nav{
+            margin-top: 1em;
+            display: flex;
+            flex-flow:column;
+            justify-content: center;
+            align-items: center;
+
+            @include breakpoint(md){
+                margin-top: 0em;
+                display: flex;
+                flex-flow:row;
+            }
+
+        }
+
+        span{
+            margin-right: 1em;
+        }
+
+        a{
+            text-decoration: none;
+            margin-right: 1em;
+            margin-top: 1em;
+
+            @include breakpoint(md){
+                margin-top: 0em;
+            }
+
+        }
+
+        .spacer{
+            width: 140px;
+        }
     }
 }

@@ -1,71 +1,73 @@
-#homePage{
+#homePage {
 
-    .contain{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-        border: 2px solid;
-    }
-    
-    .hero{
-        height: 50vh;
-    
-        .contain{
-        }
-    }
-    
-    .about{
-        height: 50vh;
-    
-        .contain{
-            
-        }
-    }
-    
-    .mission{
-        height: 50vh;
-    
-        .contain{
-            
-        }
-    }
-    
-    .benefits{
-        height: 50vh;
-    
-        .contain{
-            
-        }
-    }
-    
-    
-    .testimonial{
-        height: 50vh;
-    
-        .contain{
-            
-        }
-    }
-    
-    .call-to-action{
-        height: 50vh;
-    
-        .contain{
-            
-        }
-    }
-    
-    .blog{
-        height: 50vh;
-    
-        .contain{
-            
+
+    .hero {
+        height: calc(100vh - 70px);
+
+        .contain {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            padding: 0px;
+            background-image: url("../images/hero.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .gatsby-image-wrapper {
+                height: 100%;
+                width: 100%;
+            }
+
+            .hero-header {
+                font-size: 36px;
+                line-height: 36px;
+                color: #FFFFFF;
+                letter-spacing: 1px;
+
+                text-align: center;
+                max-width: 1000px;
+
+                animation: animateHeader .9s linear;
+
+                @keyframes animateHeader {
+                    0% {
+                        // left: -20px;
+                        // top: -20px;
+                        transform: scale(.9);
+                        opacity: .1;
+                    }
+
+                    100% {
+                        // top: 0px;
+                        opacity: 1;
+                        // left: 0px;
+                        transform: scale(1);
+                    }
+                }
+
+                @media only screen and (min-width: 900px) {
+                    font-size: 72px;
+                    line-height: 90px;
+
+                }
+            }
+
+            .btn--hero {
+                margin-top: 40px;
+                width: auto;
+                font-size: 14px;
+
+                @media only screen and (min-width: 400px) {
+                    width: 330px;
+                }
+            }
         }
     }
 
 }
-
