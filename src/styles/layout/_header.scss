@@ -3,7 +3,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #eaebed;
+    background-color: white;
     opacity: 1;
     transform: translateY(0%);
     transition: transform 500ms ease, opacity 600ms ease;
@@ -58,7 +58,6 @@ header{
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        color: #4f3b78;
         max-width: 1600px;
         margin: 0 auto;
         padding: 1em;
