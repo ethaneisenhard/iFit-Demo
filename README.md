@@ -5,7 +5,7 @@
 * Clone and run NPM install
 * Run ```gatsby develop``` or ```npm start```
 
-### Swap Out Custom Slider for Glide.js Carousel ###
+### Directions to Swap Out Custom Vanilla JS Slider for Glide.js Carousel ###
 * Inside index.js uncomment import and ```<ReviewSlider>``` component.
 * Comment out ```<ReviewCarousel>```
 
