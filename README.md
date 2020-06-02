@@ -2,7 +2,7 @@
 
 ### How do I get set up? ###
 
-* Clone and run NPM install
+* Clone and run ```npm install``` at root folder
 * Run ```gatsby develop``` or ```npm start```
 
 ### Directions to Swap Out Custom Vanilla JS Slider for Glide.js Carousel ###
