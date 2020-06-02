@@ -40,10 +40,6 @@ const ReviewCarousel = () => {
           <div className="glide__track" data-glide-el="track">
             <ul className="glide__slides">
               <li className="glide__slide">
-                <img src={MashableLogo} alt=""/>
-                <p>"You focus on putting in the work, and the technology handles the rest."</p>
-              </li>
-              <li className="glide__slide">
                 <img src={GearJunkie} alt=""/>
                 <p>"Literally transports you from home to wherever you choose to run."</p>
               </li>
@@ -74,6 +70,10 @@ const ReviewCarousel = () => {
               <li className="glide__slide">
                 <img src={WiredLogo} alt=""/>
                 <p>"Breathes new life into a tired, old running routine."</p>
+              </li>
+              <li className="glide__slide">
+                <img src={MashableLogo} alt=""/>
+                <p>"You focus on putting in the work, and the technology handles the rest."</p>
               </li>
             </ul>
           </div>

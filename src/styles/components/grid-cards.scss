@@ -54,7 +54,7 @@
                 }
 
                 .article-info-contain{
-                    display: none !important;
+                    display: none;
                 }
 
             }
@@ -79,29 +79,34 @@
                         text-align: left;
                         line-height: 18px;
                         margin: 0;
-                        padding-bottom: .5em;
-                    }
-    
-                    .article-info-contain{
-                        display: flex;
-                        align-items: center;
-                        padding: 10px 0px;
-    
-                        .article-info{
-                            display: flex;
-                            align-items: center;
-                            margin-right: 5px;
-                            font-weight: 600;
-        
-                            img{
-                                height: 12px;
-                                width: 12px;
-                                margin-right: 5px;
-                            }
-                        }
-    
+                        padding-bottom: 0px;
                     }
 
+                }
+
+                .article-text-right{
+                    img{
+                        max-width: none;
+                    }
+                }
+            }
+
+            .article-info-contain{
+                display: flex;
+                align-items: center;
+                padding: 12px 0px;
+            }
+
+            .article-info{
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+                font-weight: 600;
+
+                img{
+                    height: 12px;
+                    width: 12px;
+                    margin-right: 5px;
                 }
             }
 

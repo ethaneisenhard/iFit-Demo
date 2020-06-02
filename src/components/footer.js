@@ -45,12 +45,12 @@ const Footer = ({ siteTitle }) => (
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-               <img src={facebook} alt="Connect on Facebook"/>
+               <img className = "facebook" src={facebook} alt="Connect on Facebook"/>
               </Link>
             </div>
             <div className="social-border-wrap">
               <Link to ="/">
-                <img src={twitter} alt="Connect on Twitter"/>
+                <img className = "twitter" src={twitter} alt="Connect on Twitter"/>
               </Link>
             </div>
             <div className="social-border-wrap">
