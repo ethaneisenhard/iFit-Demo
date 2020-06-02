@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react"
-import { Animate, AnimateGroup } from "react-simple-animate"
 import useOnScreen from "../hooks/useOnScreen"
 import equipment1 from "../images/Equipmnet/equipment1.png"
 import equipment2 from "../images/Equipmnet/equipment2.png"
@@ -9,18 +8,15 @@ import "../styles/components/equipment-cards.scss"
 
 const EquipmentCards = () => {
   const observeElement = useRef()
-  const [startAnimation, setStartAnimation] = useState(false)
 
-  const onScreen = useOnScreen(observeElement, true, null, "0px", 0.4)
-
-  const animateProps = {
-    start: { opacity: 0 },
-    end: { opacity: 1 },
-  }
+  const onScreen = useOnScreen(observeElement, true, null, "0px", 0.3)
 
   useEffect(() => {
     if (onScreen === true) {
-      setStartAnimation(true)
+     let animateElements = document.querySelectorAll(".js-animate-equipment-card")
+     animateElements.forEach((element) =>{
+      element.classList.add("animate-fade-in-equipment-card")
+     })
     }
   }, [onScreen])
 
@@ -29,9 +25,7 @@ const EquipmentCards = () => {
       <section id="equipment-cards" ref={observeElement}>
         <h3>Interested in our exciting iFit-enabled equipment?</h3>
         <div className="contain">
-          <AnimateGroup play={startAnimation}>
-            <Animate {...animateProps} sequenceIndex={0}>
-              <article>
+              <article className="js-animate-equipment-card">
                 <div className="image">
                   <img src={equipment1} alt="Treadmills" />
                 </div>
@@ -39,9 +33,7 @@ const EquipmentCards = () => {
                   <h4>Treadmills</h4>
                 </div>
               </article>
-            </Animate>
-            <Animate {...animateProps} sequenceIndex={1}>
-              <article>
+              <article className="js-animate-equipment-card">
                 <div className="image">
                   <img src={equipment2} alt="Bikes" />
                 </div>
@@ -49,9 +41,7 @@ const EquipmentCards = () => {
                   <h4>Bikes</h4>
                 </div>
               </article>
-            </Animate>
-            <Animate {...animateProps} sequenceIndex={2}>
-              <article>
+              <article className="js-animate-equipment-card">
                 <div className="image">
                   <img src={equipment3} alt="Ellipticals" />
                 </div>
@@ -59,9 +49,7 @@ const EquipmentCards = () => {
                   <h4>Ellipticals</h4>
                 </div>
               </article>
-            </Animate>
-            <Animate {...animateProps} sequenceIndex={3}>
-              <article>
+              <article className="js-animate-equipment-card">
                 <div className="image">
                   <img src={equipment4} alt="Strength" />
                 </div>
@@ -69,8 +57,6 @@ const EquipmentCards = () => {
                   <h4>Strength</h4>
                 </div>
               </article>
-            </Animate>
-          </AnimateGroup>
         </div>
       </section>
     </>

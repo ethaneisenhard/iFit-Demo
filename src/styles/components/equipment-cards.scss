@@ -11,6 +11,7 @@
         letter-spacing: 0.3px;
         text-align: center;
         line-height: 28px;
+        padding: 0 1em;
     }
 
     .contain {
@@ -40,8 +41,14 @@
             box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);
             border-radius: 4px;
             padding: 30px;
-            height: 330px;
+            transform: scale(.75) translateY(100px);
+            opacity: 0;
+            transition: transform 500ms ease, opacity 500ms ease;
 
+            &.animate-fade-in-equipment-card{
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
 
            .image{
                 height: 100%;

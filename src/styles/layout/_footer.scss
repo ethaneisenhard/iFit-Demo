@@ -7,14 +7,13 @@ footer{
 
         nav{
             display: flex;
-            flex-flow: column;
+            flex-flow: row;
             justify-content: space-evenly;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
 
             @include breakpoint(sm){
-                flex-flow: row;
                 text-align: left;
             }
         }
